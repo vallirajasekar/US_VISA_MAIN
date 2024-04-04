@@ -1,0 +1,8 @@
+[ 2024-04-05 00:41:02,458 ] root - INFO - MongoDB connection succesfull
+[ 2024-04-05 00:41:02,458 ] root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2024-04-05 00:41:02,458 ] root - INFO - Exporting data from mongodb
+[ 2024-04-05 00:41:02,458 ] root - INFO - MongoDB connection succesfull
+[ 2024-04-05 00:41:03,079 ] root - INFO - Shape of dataframe: (0, 0)
+[ 2024-04-05 00:41:03,080 ] root - INFO - Saving exported data into feature store file path: artifact/04_05_2024_00_41_02/data_ingestion/feature_store/usvisa.csv
+[ 2024-04-05 00:41:03,082 ] root - INFO - Got the data from mongodb
+[ 2024-04-05 00:41:03,082 ] root - INFO - Entered split_data_as_train_test method of Data_Ingestion class
