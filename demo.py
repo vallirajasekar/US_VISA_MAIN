@@ -1,6 +1,12 @@
-from us_visa.configuration.mongodb_connection import MongoDBClient
+#from us_visa.configuration.mongodb_connection import MongoDBClient
 from us_visa.components.data_ingestion import DataIngestion
 
-ins=MongoDBClient()
+from us_visa.entity.config_entity import DataIngestionConfig,DataValidationConfig
+from us_visa.entity.artifact_entity import DataIngestionArtifact,DataValidationArtifact
+from us_visa.components.data_validation import DataValidation
+
+#ins=MongoDBClient()
 di_ins = DataIngestion()
 di_art = di_ins.initiate_data_ingestion()
+dv_ins=DataValidation(data_ingestion_artifact=di_art,data_validation_config=DataValidationConfig)
+dv_art=dv_ins.initiate_data_validation()
